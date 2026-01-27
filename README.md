@@ -112,6 +112,18 @@ The Streamlit-based dashboard provides:
 
 The dashboard is designed to fit on a **single screen**, making it suitable for **control-room-style monitoring**.
 
+1.Dashboard
+
+<img width="1147" height="564" alt="image" src="https://github.com/user-attachments/assets/f111f360-2df7-4e36-bda3-676ef08b7e53" />
+
+2.Normal Load Alert
+
+<img width="1120" height="557" alt="image" src="https://github.com/user-attachments/assets/31609d2a-e1e4-4cc1-b8c4-1e3f7e6cc9a8" />
+
+3.High Risk Alert
+
+<img width="1146" height="558" alt="image" src="https://github.com/user-attachments/assets/fb18fcfe-b3ed-4b1a-99ce-11f89a4ef6b0" />
+
 ---
 
 ## How the System Works (Operational Flow)
