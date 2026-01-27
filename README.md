@@ -2,8 +2,6 @@
 
 ### Proactive Service Optimization Using Short-Horizon Forecasting
 
----
-
 ## Project Overview
 
 Urban public transport systems frequently experience sudden passenger surges, leading to **overcrowding**, **long waiting times**, **passenger discomfort**, and **operational inefficiencies**. Most existing systems rely on **reactive responses** or **long-term demand forecasting**, which are insufficient to prevent short-term congestion.
@@ -12,7 +10,6 @@ This project presents a **real-time AI-driven decision-support framework** that 
 
 The system is designed as a **research-oriented prototype**, emphasizing **prediction accuracy, interpretability, and operational realism**.
 
----
 
 ## Objectives
 
@@ -23,7 +20,6 @@ The system is designed as a **research-oriented prototype**, emphasizing **predi
 * Provide **operator-oriented alerts and visual decision support**
 * Demonstrate a scalable architecture for smart transport systems
 
----
 
 ## Key Features
 
@@ -35,7 +31,6 @@ The system is designed as a **research-oriented prototype**, emphasizing **predi
 * **Animated capacity utilization indicator**
 * **Operator alert recommendations (decision support, not control)**
 
----
 
 ## System Architecture
 
@@ -55,7 +50,6 @@ Waiting Time Estimation
 Dashboard Visualization & Operator Alerts
 ```
 
----
 
 ## Dataset Used
 
@@ -69,7 +63,6 @@ Source: UCI Machine Learning Repository
 
 > This simulation-based approach is widely adopted in intelligent transportation system research when live sensor data is unavailable.
 
----
 
 ## Machine Learning Model
 
@@ -81,7 +74,6 @@ Source: UCI Machine Learning Repository
 
 To improve operational reliability, the raw AI prediction is combined with recent observations using a **weighted blending strategy**, reducing prediction spikes and false high-risk alerts.
 
----
 
 ## Risk Classification Logic
 
@@ -97,7 +89,7 @@ Risk = Effective Passenger Load / Vehicle Capacity
 | Moderate   | Rising load; congestion likely if trend continues   |
 | High       | Overcrowding imminent; proactive action recommended |
 
----
+
 
 ## Dashboard Overview
 
@@ -124,7 +116,6 @@ The dashboard is designed to fit on a **single screen**, making it suitable for 
 
 <img width="1146" height="558" alt="image" src="https://github.com/user-attachments/assets/fb18fcfe-b3ed-4b1a-99ce-11f89a4ef6b0" />
 
----
 
 ## How the System Works (Operational Flow)
 
@@ -134,7 +125,6 @@ The dashboard is designed to fit on a **single screen**, making it suitable for 
 4. Crowding risk and waiting time are computed
 5. Visual alerts and recommendations are generated for operators
 
----
 
 ## Results & Observations
 
@@ -145,7 +135,7 @@ The dashboard is designed to fit on a **single screen**, making it suitable for 
 
 > The results demonstrate the feasibility of AI-assisted proactive transport management.
 
----
+
 
 ## Technologies Used
 
@@ -155,16 +145,6 @@ The dashboard is designed to fit on a **single screen**, making it suitable for 
 * **Visualization & UI:** Streamlit, Matplotlib
 * **Dataset Source:** UCI Machine Learning Repository
 
----
-
-## How to Run the Project
-
-```bash
-python train_lstm.py
-streamlit run dashboard.py
-```
-
----
 
 ## Future Enhancements
 
@@ -174,8 +154,4 @@ streamlit run dashboard.py
 * Mobile app integration for passenger notifications
 * Cloud deployment for real-time scalability
 
----
-
-
-Just tell me 👍
 
