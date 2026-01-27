@@ -1,59 +1,164 @@
-## Title of the Project
-Small description about the project like one below
-The integration of a chatbot within a hostel booking system, aimed at streamlining the reservation process for students and improving the overall user experience.
+# Real-Time AI-Driven Prediction of Public Transport Overcrowding
 
-## About
-<!--Detailed Description about the project-->
-Tailored Chatbot for Hostel Booking System is a project designed to integrate a chatbot that leverages advanced natural language processing techniques to understand and respond to user queries to the hostel booking system. Traditional hostel booking processes are often time-consuming and involve manual searches and extensive communication with hostel staff. This project seeks to overcome these challenges by creating an easy-to-use chatbot interface that assists students in addressing inquiries.
+### Proactive Service Optimization Using Short-Horizon Forecasting
 
-## Features
-<!--List the features of the project as shown below-->
-- Implements advance neural network method.
-- A framework based application for deployment purpose.
-- High scalability.
-- Less time complexity.
-- A specific scope of Chatbot response model, using json data format.
+## 1.Project Overview
 
-## Requirements
-<!--List the requirements of the project as shown below-->
-* Operating System: Requires a 64-bit OS (Windows 10 or Ubuntu) for compatibility with deep learning frameworks.
-* Development Environment: Python 3.6 or later is necessary for coding the sign language detection system.
-* Deep Learning Frameworks: TensorFlow for model training, MediaPipe for hand gesture recognition.
-* Image Processing Libraries: OpenCV is essential for efficient image processing and real-time hand gesture recognition.
-* Version Control: Implementation of Git for collaborative development and effective code management.
-* IDE: Use of VSCode as the Integrated Development Environment for coding, debugging, and version control integration.
-* Additional Dependencies: Includes scikit-learn, TensorFlow (versions 2.4.1), TensorFlow GPU, OpenCV, and Mediapipe for deep learning tasks.
+Urban public transport systems frequently experience sudden passenger surges, leading to **overcrowding**, **long waiting times**, **passenger discomfort**, and **operational inefficiencies**. Most existing systems rely on **reactive responses** or **long-term demand forecasting**, which are insufficient to prevent short-term congestion.
 
-## System Architecture
-<!--Embed the system architecture diagram as shown below-->
+This project presents a **real-time AI-driven decision-support framework** that predicts **imminent overcrowding (10–15 minutes ahead)** using recent passenger trends and generates **actionable alerts** for transport operators to proactively manage resources.
 
-![Screenshot 2023-11-25 133637](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
+The system is designed as a **research-oriented prototype**, emphasizing **prediction accuracy, interpretability, and operational realism**.
 
 
-## Output
+## 2.Objectives
 
-<!--Embed the Output picture at respective places as shown below as shown below-->
-#### Output1 - Name of the output
-
-![Screenshot 2023-11-25 134037](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
-
-#### Output2 - Name of the output
-![Screenshot 2023-11-25 134253](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
-
-Detection Accuracy: 96.7%
-Note: These metrics can be customized based on your actual performance evaluations.
+* Predict short-term passenger load using AI
+* Identify **pre-overcrowding conditions** before congestion occurs
+* Classify risk levels (Normal / Moderate / High)
+* Estimate passenger waiting time
+* Provide **operator-oriented alerts and visual decision support**
+* Demonstrate a scalable architecture for smart transport systems
 
 
-## Results and Impact
-<!--Give the results and impact as shown below-->
-The Sign Language Detection System enhances accessibility for individuals with hearing and speech impairments, providing a valuable tool for inclusive communication. The project's integration of computer vision and deep learning showcases its potential for intuitive and interactive human-computer interaction.
+## 3.Key Features
 
-This project serves as a foundation for future developments in assistive technologies and contributes to creating a more inclusive and accessible digital environment.
+* **LSTM-based short-horizon prediction** (10–15 minutes ahead)
+* **Crowding Risk Score** based on predicted load and vehicle capacity
+* **Blended decision logic** to reduce false alarms
+* **Single-screen interactive dashboard**
+* **Trend visualization with annotated values**
+* **Animated capacity utilization indicator**
+* **Operator alert recommendations (decision support, not control)**
 
-## Articles published / References
-1. N. S. Gupta, S. K. Rout, S. Barik, R. R. Kalangi, and B. Swampa, “Enhancing Heart Disease Prediction Accuracy Through Hybrid Machine Learning Methods ”, EAI Endorsed Trans IoT, vol. 10, Mar. 2024.
-2. A. A. BIN ZAINUDDIN, “Enhancing IoT Security: A Synergy of Machine Learning, Artificial Intelligence, and Blockchain”, Data Science Insights, vol. 2, no. 1, Feb. 2024.
+
+## 4.System Architecture
+
+```
+Passenger Data (Simulated Real-Time)
+        ↓
+Data Preprocessing & Normalization
+        ↓
+LSTM Prediction Model
+        ↓
+Prediction Stabilization (Blending)
+        ↓
+Crowding Risk Assessment
+        ↓
+Waiting Time Estimation
+        ↓
+Dashboard Visualization & Operator Alerts
+```
 
 
+## 5.Dataset Used
+
+**Primary Dataset:**
+Metro Interstate Traffic Volume Dataset
+Source: UCI Machine Learning Repository
+
+* Contains traffic volume, time, weather, and holiday information
+* Traffic volume is used as a **proxy for passenger demand**
+* Real-time behavior is simulated using **sequential time-series replay**
+
+This simulation-based approach is widely adopted in intelligent transportation system research when live sensor data is unavailable.
+
+
+## 6.Machine Learning Model
+
+* **Model Type:** Long Short-Term Memory (LSTM)
+* **Input:** Passenger counts from recent time intervals
+* **Output:** Predicted passenger load for the next 10–15 minutes
+* **Training:** Historical data with normalization
+* **Loss Function:** Mean Squared Error (MSE)
+
+To improve operational reliability, the raw AI prediction is combined with recent observations using a **weighted blending strategy**, reducing prediction spikes and false high-risk alerts.
+
+
+## 7.Risk Classification Logic
+
+Crowding risk is calculated as:
+
+```
+Risk = Effective Passenger Load / Vehicle Capacity
+```
+
+| Risk Level | Description                                         |
+| ---------- | --------------------------------------------------- |
+| Normal     | Load within safe operating capacity                 |
+| Moderate   | Rising load; congestion likely if trend continues   |
+| High       | Overcrowding imminent; proactive action recommended |
+
+
+
+## 8.Dashboard Overview
+
+The Streamlit-based dashboard provides:
+
+* Recent passenger trend visualization
+* Predicted future load
+* Risk level indicators
+* Estimated waiting time
+* Capacity utilization bar
+* Animated bus indicator for intuitive understanding
+
+The dashboard is designed to fit on a **single screen**, making it suitable for **control-room-style monitoring**.
+
+1.Dashboard
+
+<img width="1916" height="1007" alt="OS1" src="https://github.com/user-attachments/assets/a2e17a7e-ef5a-49a2-bf8f-c740a7138243" />
+
+
+2.Normal Load Alert
+
+<img width="1911" height="987" alt="OS2" src="https://github.com/user-attachments/assets/be9dc532-89ee-44ba-8553-a1edd58147cf" />
+
+
+
+3.Moderate Risk Alert
+
+<img width="1908" height="996" alt="OS3" src="https://github.com/user-attachments/assets/4c7c546a-3b43-4a42-9c7d-26916de78a61" />
+
+
+4. High Risk Alert
+   
+<img width="1912" height="978" alt="OS4" src="https://github.com/user-attachments/assets/c8da353d-1aa6-4dba-a68a-55e6621b32a5" />
+
+
+## 9.How the System Works (Operational Flow)
+
+1. Recent passenger counts are received (simulated sensor input)
+2. The AI model predicts near-future passenger load
+3. Prediction is stabilized using recent observations
+4. Crowding risk and waiting time are computed
+5. Visual alerts and recommendations are generated for operators
+
+
+
+## 10.Technologies Used
+
+* **Programming Language:** Python
+* **Machine Learning:** TensorFlow / Keras
+* **Data Processing:** Pandas, NumPy
+* **Visualization & UI:** Streamlit, Matplotlib
+* **Dataset Source:** UCI Machine Learning Repository
+  
+## 11.Results & Observations
+
+* The system successfully identifies **rising congestion trends**
+* Moderate and high-risk conditions are detected **before overcrowding occurs**
+* Prediction stabilization significantly reduces false alarms
+* Visual indicators improve interpretability and response readiness
+
+> The results demonstrate the feasibility of AI-assisted proactive transport management.
+
+## 12.Future Enhancements
+
+* Integration with live passenger counting sensors (CCTV, IR, smart ticketing)
+* City-wide multi-route modeling
+* Reinforcement learning for scheduling optimization
+* Mobile app integration for passenger notifications
+* Cloud deployment for real-time scalability
+  
 
 
