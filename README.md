@@ -2,7 +2,7 @@
 
 ### Proactive Service Optimization Using Short-Horizon Forecasting
 
-## Project Overview
+## 1.Project Overview
 
 Urban public transport systems frequently experience sudden passenger surges, leading to **overcrowding**, **long waiting times**, **passenger discomfort**, and **operational inefficiencies**. Most existing systems rely on **reactive responses** or **long-term demand forecasting**, which are insufficient to prevent short-term congestion.
 
@@ -11,7 +11,7 @@ This project presents a **real-time AI-driven decision-support framework** that 
 The system is designed as a **research-oriented prototype**, emphasizing **prediction accuracy, interpretability, and operational realism**.
 
 
-## Objectives
+## 2.Objectives
 
 * Predict short-term passenger load using AI
 * Identify **pre-overcrowding conditions** before congestion occurs
@@ -21,7 +21,7 @@ The system is designed as a **research-oriented prototype**, emphasizing **predi
 * Demonstrate a scalable architecture for smart transport systems
 
 
-## Key Features
+## 3.Key Features
 
 * **LSTM-based short-horizon prediction** (10–15 minutes ahead)
 * **Crowding Risk Score** based on predicted load and vehicle capacity
@@ -32,7 +32,7 @@ The system is designed as a **research-oriented prototype**, emphasizing **predi
 * **Operator alert recommendations (decision support, not control)**
 
 
-## System Architecture
+## 4.System Architecture
 
 ```
 Passenger Data (Simulated Real-Time)
@@ -51,7 +51,7 @@ Dashboard Visualization & Operator Alerts
 ```
 
 
-## Dataset Used
+## 5.Dataset Used
 
 **Primary Dataset:**
 Metro Interstate Traffic Volume Dataset
@@ -61,10 +61,10 @@ Source: UCI Machine Learning Repository
 * Traffic volume is used as a **proxy for passenger demand**
 * Real-time behavior is simulated using **sequential time-series replay**
 
-> This simulation-based approach is widely adopted in intelligent transportation system research when live sensor data is unavailable.
+This simulation-based approach is widely adopted in intelligent transportation system research when live sensor data is unavailable.
 
 
-## Machine Learning Model
+## 6.Machine Learning Model
 
 * **Model Type:** Long Short-Term Memory (LSTM)
 * **Input:** Passenger counts from recent time intervals
@@ -75,7 +75,7 @@ Source: UCI Machine Learning Repository
 To improve operational reliability, the raw AI prediction is combined with recent observations using a **weighted blending strategy**, reducing prediction spikes and false high-risk alerts.
 
 
-## Risk Classification Logic
+## 7.Risk Classification Logic
 
 Crowding risk is calculated as:
 
@@ -91,7 +91,7 @@ Risk = Effective Passenger Load / Vehicle Capacity
 
 
 
-## Dashboard Overview
+## 8.Dashboard Overview
 
 The Streamlit-based dashboard provides:
 
@@ -117,7 +117,7 @@ The dashboard is designed to fit on a **single screen**, making it suitable for 
 <img width="1146" height="558" alt="image" src="https://github.com/user-attachments/assets/fb18fcfe-b3ed-4b1a-99ce-11f89a4ef6b0" />
 
 
-## How the System Works (Operational Flow)
+## 9.How the System Works (Operational Flow)
 
 1. Recent passenger counts are received (simulated sensor input)
 2. The AI model predicts near-future passenger load
@@ -126,7 +126,7 @@ The dashboard is designed to fit on a **single screen**, making it suitable for 
 5. Visual alerts and recommendations are generated for operators
 
 
-## Results & Observations
+## 10.Results & Observations
 
 * The system successfully identifies **rising congestion trends**
 * Moderate and high-risk conditions are detected **before overcrowding occurs**
@@ -137,7 +137,7 @@ The dashboard is designed to fit on a **single screen**, making it suitable for 
 
 
 
-## Technologies Used
+## 11.Technologies Used
 
 * **Programming Language:** Python
 * **Machine Learning:** TensorFlow / Keras
@@ -146,7 +146,7 @@ The dashboard is designed to fit on a **single screen**, making it suitable for 
 * **Dataset Source:** UCI Machine Learning Repository
 
 
-## Future Enhancements
+## 12.Future Enhancements
 
 * Integration with live passenger counting sensors (CCTV, IR, smart ticketing)
 * City-wide multi-route modeling
