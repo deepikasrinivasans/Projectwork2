@@ -104,17 +104,23 @@ The Streamlit-based dashboard provides:
 
 The dashboard is designed to fit on a **single screen**, making it suitable for **control-room-style monitoring**.
 
-1.Dashboard
+### 1.System Home Page:
+<img width="1918" height="993" alt="public1" src="https://github.com/user-attachments/assets/e1bd3084-acd5-4f9e-80dd-d81c221b3329" />
 
-<img width="1147" height="564" alt="image" src="https://github.com/user-attachments/assets/f111f360-2df7-4e36-bda3-676ef08b7e53" />
+### 2. Real-Time Dashboard
+<img width="1890" height="907" alt="pp2 1" src="https://github.com/user-attachments/assets/fb3a9758-cdfd-4703-87a4-031e28a68e05" />
 
-2.Normal Load Alert
+### 3.Live Bus Tracking Map
+<img width="1882" height="686" alt="pp4" src="https://github.com/user-attachments/assets/b17017c1-7e4b-4f39-99bb-436b3f50c5f0" />
 
-<img width="1120" height="557" alt="image" src="https://github.com/user-attachments/assets/31609d2a-e1e4-4cc1-b8c4-1e3f7e6cc9a8" />
+### 4. AI Prediction & Passenger Trend graph
+<img width="1915" height="712" alt="public 4" src="https://github.com/user-attachments/assets/c3092d04-ac39-467a-a706-03aec92797c0" />
 
-3.High Risk Alert
+### 5. Alert & Dispatch Recommendation
+<img width="1903" height="993" alt="public 5" src="https://github.com/user-attachments/assets/d2d72cff-6699-4b91-9a91-db8d67cee808" />
 
-<img width="1146" height="558" alt="image" src="https://github.com/user-attachments/assets/fb18fcfe-b3ed-4b1a-99ce-11f89a4ef6b0" />
+
+
 
 
 ## 9.How the System Works (Operational Flow)
@@ -126,7 +132,16 @@ The dashboard is designed to fit on a **single screen**, making it suitable for 
 5. Visual alerts and recommendations are generated for operators
 
 
-## 10.Results & Observations
+
+## 10.Technologies Used
+
+* **Programming Language:** Python
+* **Machine Learning:** TensorFlow / Keras
+* **Data Processing:** Pandas, NumPy
+* **Visualization & UI:** Streamlit, Matplotlib
+* **Dataset Source:** UCI Machine Learning Repository
+  
+## 11.Results & Observations
 
 * The system successfully identifies **rising congestion trends**
 * Moderate and high-risk conditions are detected **before overcrowding occurs**
@@ -135,17 +150,6 @@ The dashboard is designed to fit on a **single screen**, making it suitable for 
 
 > The results demonstrate the feasibility of AI-assisted proactive transport management.
 
-
-
-## 11.Technologies Used
-
-* **Programming Language:** Python
-* **Machine Learning:** TensorFlow / Keras
-* **Data Processing:** Pandas, NumPy
-* **Visualization & UI:** Streamlit, Matplotlib
-* **Dataset Source:** UCI Machine Learning Repository
-
-
 ## 12.Future Enhancements
 
 * Integration with live passenger counting sensors (CCTV, IR, smart ticketing)
@@ -153,5 +157,6 @@ The dashboard is designed to fit on a **single screen**, making it suitable for 
 * Reinforcement learning for scheduling optimization
 * Mobile app integration for passenger notifications
 * Cloud deployment for real-time scalability
+  
 
 
