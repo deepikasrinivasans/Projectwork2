@@ -104,17 +104,19 @@ The Streamlit-based dashboard provides:
 
 The dashboard is designed to fit on a **single screen**, making it suitable for **control-room-style monitoring**.
 
-1.System Home Page:
+### 1.System Home Page:
 <img width="1918" height="993" alt="public1" src="https://github.com/user-attachments/assets/e1bd3084-acd5-4f9e-80dd-d81c221b3329" />
 
-2. Real-Time Dashboard
+### 2. Real-Time Dashboard
 <img width="1890" height="907" alt="pp2 1" src="https://github.com/user-attachments/assets/fb3a9758-cdfd-4703-87a4-031e28a68e05" />
 
-3.Live Bus Tracking Map
+### 3.Live Bus Tracking Map
 <img width="1882" height="686" alt="pp4" src="https://github.com/user-attachments/assets/b17017c1-7e4b-4f39-99bb-436b3f50c5f0" />
-4. AI Prediction & Passenger Trend graph
+
+### 4. AI Prediction & Passenger Trend graph
 <img width="1915" height="712" alt="public 4" src="https://github.com/user-attachments/assets/c3092d04-ac39-467a-a706-03aec92797c0" />
-5. Alert & Dispatch Recommendation
+
+### 5. Alert & Dispatch Recommendation
 <img width="1903" height="993" alt="public 5" src="https://github.com/user-attachments/assets/d2d72cff-6699-4b91-9a91-db8d67cee808" />
 
 
