@@ -104,25 +104,21 @@ The Streamlit-based dashboard provides:
 
 The dashboard is designed to fit on a **single screen**, making it suitable for **control-room-style monitoring**.
 
-1.Dashboard
+1.System Home Page:
+<img width="1918" height="993" alt="public1" src="https://github.com/user-attachments/assets/e1bd3084-acd5-4f9e-80dd-d81c221b3329" />
 
-<img width="1916" height="1007" alt="OS1" src="https://github.com/user-attachments/assets/a2e17a7e-ef5a-49a2-bf8f-c740a7138243" />
+2. Real-Time Dashboard
+<img width="1890" height="907" alt="pp2 1" src="https://github.com/user-attachments/assets/fb3a9758-cdfd-4703-87a4-031e28a68e05" />
 
-
-2.Normal Load Alert
-
-<img width="1911" height="987" alt="OS2" src="https://github.com/user-attachments/assets/be9dc532-89ee-44ba-8553-a1edd58147cf" />
-
-
-
-3.Moderate Risk Alert
-
-<img width="1908" height="996" alt="OS3" src="https://github.com/user-attachments/assets/4c7c546a-3b43-4a42-9c7d-26916de78a61" />
+3.Live Bus Tracking Map
+<img width="1882" height="686" alt="pp4" src="https://github.com/user-attachments/assets/b17017c1-7e4b-4f39-99bb-436b3f50c5f0" />
+4. AI Prediction & Passenger Trend graph
+<img width="1915" height="712" alt="public 4" src="https://github.com/user-attachments/assets/c3092d04-ac39-467a-a706-03aec92797c0" />
+5. Alert & Dispatch Recommendation
+<img width="1903" height="993" alt="public 5" src="https://github.com/user-attachments/assets/d2d72cff-6699-4b91-9a91-db8d67cee808" />
 
 
-4. High Risk Alert
-   
-<img width="1912" height="978" alt="OS4" src="https://github.com/user-attachments/assets/c8da353d-1aa6-4dba-a68a-55e6621b32a5" />
+
 
 
 ## 9.How the System Works (Operational Flow)
